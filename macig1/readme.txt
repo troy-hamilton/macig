@@ -16,7 +16,7 @@ and the content manufacturing functions can be used without any changes.
 the reading and writing will be seperated from the content manufacturing.
 obviousley there will be things that need to be used in the conmac process,
 like checking if there are bytes available, such as in the event of a partial
-send. this will be available as a function called bypend_check();
+send. this will be available as a function called pendata();
 that is just an example of a function that has to be "portable".
 
 a list of functions that can be considered portable will be made, and
