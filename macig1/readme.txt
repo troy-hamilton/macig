@@ -98,3 +98,4 @@ return WRITEFUL; /* tells the caller the request was valid, and content has been
 NOTE: if WRITEFUL is returned, the caller may choose to reuse the connection. if the connection fails, e.g. the client send a connection-close:
 the connection will fail gracefully, and not pointlessly re-call this function again.
 */
+an edit
