@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>yortah.com</title>
+	<style>
+		body {
+			margin: 0;
+			padding: 0;
+		}
+		@keyframes myanimation {
+			0% {background-color: black;}
+			20% {background-color: darkmagenta;}
+			30% {background-color: purple;}
+			40% {background-color: royalblue;}
+			50% {background-color: blueviolet;}
+			60% {background-color: goldenrod;}
+			70% {background-color: darkorchid;}
+			80% {background-color: darkviolet;}
+			90% {background-color: indigo;}
+			95% {background-color: royalblue;}
+			100% {background-color: black;}
+		}
+		.outershell {
+			height: 100 vh;
+			width: 100 vw;
+			animation: myanimation 30s infinite;
+		}
+
+		.loginouter {
+			display: grid;
+			grid-template-columns: 1fr 1fr 1fr;
+			grid-template-rows: 1fr 1fr 1fr;
+			
+		}
+		.login {
+			font-family: arial;
+			background-color: grey;
+			border-radius: 9%;
+			border: 4px double white;
+			grid-column: 2 / 3;
+			grid-row: 2 / 3;
+			text-align: center;
+		}
+		.login > h2
+		{
+			color: white;
+			font-size: 2em;
+		}
+		.login > form
+		{
+			padding-left: 1vw;
+			padding-right: 1vw;
+		}
+	</style>
+</head>
+<body>
+	<div class = "outershell">
+		<div class = "loginouter">
+			<div class = "login">
+				<h2>login</h2>
+				<form action="login" method = post>
+					<input type = "text" name = "username" placeholder = "username">
+					<br>
+					<br>
+					<input type = "password" name = "password" placeholder = "password">
+					<br>
+					<br>
+					<input type = "submit">
+				</form>
+				<br><br>
+				<a href = "signup.html">sign up</a>
+				<br><br>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

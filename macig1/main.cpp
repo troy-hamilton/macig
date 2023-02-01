@@ -5,7 +5,7 @@
 
 int looper()
 {
-	int listening_socket = make_listener(1111);
+	int listening_socket = make_listener(80);
 	if(listening_socket == -1)
 		return -1;
 	
@@ -30,6 +30,6 @@ int looper()
 }
 
 int main()
-{// fix step out so it ignores a -1 in the case that looper fails
+{
 	step_out(looper()); // main() will loop on looper. step_out() will only be called in the forked process
 }
